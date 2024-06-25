@@ -24,8 +24,8 @@ wetpanpot(y) 	= sqrt(d)*y, sqrt(1-d)*y
 				d=(nentry("[1]Image Pan[style:knob]",20,-90,90,1)-90.0)/-180.0;
 			};
             
-lfoMod = hslider ("LFO Modulation", 6, 0, 12, 0.01);
-delayMod = os.lf_triangle(lfoMod) * hslider("Modulation Amount", 1, 0, 1, 0.01);
+lfoMod = hslider ("LFO Modulation", 0.45, 0, 12, 0.01);
+delayMod = os.lf_triangle(lfoMod) * hslider("Modulation Amount", 0.25, 0, 1, 0.01);
 delaymsec = hslider("Delay MilliSeconds", 20, 1, maxMillSec, 1) * oneMillSec; 
 lowpassFreq = hslider("LowPass Filter Freq", 8000, 20, 20000, 100);
 process = _,_ : de.sdelay(96000, 1024, delaymsec *  delayMod ),_:fi.lowpass(3, 8000),_* 1;

@@ -1,0 +1,27 @@
+name: Faust Generate LV2 Linux X86_64
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Install Faust Compiler
+        run: sudo apt-get update && sudo apt-get install -y faust
+
+      - name: Build MonoSpatializer
+        run: faust2lv2 MonoSpatilizer.dsp
+
+      - name: Build VintageDelayProto
+        run: faust2lv2 VintageDelayProto.dsp
+

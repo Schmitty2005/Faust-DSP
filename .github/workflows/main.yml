@@ -20,5 +20,5 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y faust
 
       - name: Build MonoSpatializer
-        run: faust2lv2 MonoSpatilizer.dsp
+        run: faust2lv2 MonoSpatializer.dsp
         

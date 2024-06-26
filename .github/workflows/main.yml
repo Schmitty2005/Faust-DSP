@@ -21,4 +21,7 @@ jobs:
 
       - name: Build MonoSpatializer
         run: faust2lv2 MonoSpatializer.dsp
+
+      - name: View Directory
+        run: ls -l
         

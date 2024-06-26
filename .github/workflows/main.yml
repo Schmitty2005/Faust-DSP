@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Install Faust Compiler
-        run: sudo apt-get update && sudo apt-get install -y faust
+        run: sudo apt-get update && sudo apt-get install -y faust libboost-all-dev
 
       - name: Build MonoSpatializer
         run: faust2lv2 MonoSpatializer.dsp

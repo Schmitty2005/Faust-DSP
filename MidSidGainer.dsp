@@ -18,7 +18,7 @@ wetpanpot(y) 	= sqrt(d)*y, sqrt(1-d)*y
 //@TODO Needs linear2db fix on gain knobs.
 midgain = vslider("Mid Gain", 1, 1, 6, 0.1);
 sidegain = hslider("Side Gain", 1,1, 6, 0.1);
-
+//@TODO Possibly add a slight delay between left and right side and listen to results.
 splitToMidSide = (_,_ <: _,_,_,_ :(((_,_):> _ ) * midgain, ((_, _ * -1):>_) * sidegain));
 sideToMid = _,_ <: _,_,_,_ :> ((_,_*-1):>_),((_,_):>_);
 

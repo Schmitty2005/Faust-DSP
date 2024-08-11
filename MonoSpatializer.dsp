@@ -27,4 +27,10 @@ wetpanpot(y) 	= sqrt(d)*y, sqrt(1-d)*y
 delaymsec = hslider("Delay MilliSeconds", 20, 1, maxMillSec, 1); 
 lowpassFreq = hslider("LowPass Filter Freq", 8000, 20, 20000, 100);
 
-process		= _,_ :> _  <: _,_ : _, de.sdelay(maxd, 128, (delaymsec * oneMillSec)): _, fi.lowpass6e(lowpassFreq):drypanpot, wetpanpot:_,_,_,_ :> _,_;
+//Stero version may not work in Windows
+//process		= _,_ :> _  <: _,_ : _, de.sdelay(maxd, 128, (delaymsec * oneMillSec)): _, fi.lowpass6e(lowpassFreq):drypanpot, wetpanpot:_,_,_,_ :> _,_;
+
+//switched to mono input
+process		= _  <: _,_ : _, de.sdelay(maxd, 128, (delaymsec * oneMillSec)): _, fi.lowpass6e(lowpassFreq):drypanpot, wetpanpot:_,_,_,_ :> _,_;
+
+

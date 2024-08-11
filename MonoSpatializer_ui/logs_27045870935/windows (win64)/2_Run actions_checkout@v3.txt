@@ -1,0 +1,103 @@
+﻿2024-08-11T14:49:57.6267708Z ##[group]Run actions/checkout@v3
+2024-08-11T14:49:57.6268090Z with:
+2024-08-11T14:49:57.6268318Z   submodules: recursive
+2024-08-11T14:49:57.6268647Z   repository: Schmitty2005/MonoSpatializer_ui
+2024-08-11T14:49:57.6269219Z   token: ***
+2024-08-11T14:49:57.6269455Z   ssh-strict: true
+2024-08-11T14:49:57.6269712Z   persist-credentials: true
+2024-08-11T14:49:57.6269997Z   clean: true
+2024-08-11T14:49:57.6270259Z   sparse-checkout-cone-mode: true
+2024-08-11T14:49:57.6270561Z   fetch-depth: 1
+2024-08-11T14:49:57.6270809Z   fetch-tags: false
+2024-08-11T14:49:57.6271050Z   lfs: false
+2024-08-11T14:49:57.6271275Z   set-safe-directory: true
+2024-08-11T14:49:57.6271542Z env:
+2024-08-11T14:49:57.6271755Z   PAWPAW_SKIP_LV2: 0
+2024-08-11T14:49:57.6272000Z ##[endgroup]
+2024-08-11T14:49:57.8056271Z Syncing repository: Schmitty2005/MonoSpatializer_ui
+2024-08-11T14:49:57.8057933Z ##[group]Getting Git version info
+2024-08-11T14:49:57.8059033Z Working directory is '/home/runner/work/MonoSpatializer_ui/MonoSpatializer_ui'
+2024-08-11T14:49:57.8060030Z [command]/usr/bin/git version
+2024-08-11T14:49:57.8075867Z git version 2.46.0
+2024-08-11T14:49:57.8102693Z ##[endgroup]
+2024-08-11T14:49:57.8119234Z Temporarily overriding HOME='/home/runner/work/_temp/88e08fd2-7163-47b9-b873-3fdbbec6d231' before making global git config changes
+2024-08-11T14:49:57.8120255Z Adding repository directory to the temporary git global config as a safe directory
+2024-08-11T14:49:57.8122313Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MonoSpatializer_ui/MonoSpatializer_ui
+2024-08-11T14:49:57.8152997Z Deleting the contents of '/home/runner/work/MonoSpatializer_ui/MonoSpatializer_ui'
+2024-08-11T14:49:57.8156433Z ##[group]Initializing the repository
+2024-08-11T14:49:57.8160174Z [command]/usr/bin/git init /home/runner/work/MonoSpatializer_ui/MonoSpatializer_ui
+2024-08-11T14:49:57.8223682Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-08-11T14:49:57.8225124Z hint: is subject to change. To configure the initial branch name to use in all
+2024-08-11T14:49:57.8226667Z hint: of your new repositories, which will suppress this warning, call:
+2024-08-11T14:49:57.8227452Z hint:
+2024-08-11T14:49:57.8228087Z hint: 	git config --global init.defaultBranch <name>
+2024-08-11T14:49:57.8228908Z hint:
+2024-08-11T14:49:57.8229743Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-08-11T14:49:57.8230965Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-08-11T14:49:57.8231793Z hint:
+2024-08-11T14:49:57.8232319Z hint: 	git branch -m <name>
+2024-08-11T14:49:57.8233342Z Initialized empty Git repository in /home/runner/work/MonoSpatializer_ui/MonoSpatializer_ui/.git/
+2024-08-11T14:49:57.8235403Z [command]/usr/bin/git remote add origin https://github.com/Schmitty2005/MonoSpatializer_ui
+2024-08-11T14:49:57.8290825Z ##[endgroup]
+2024-08-11T14:49:57.8291311Z ##[group]Disabling automatic garbage collection
+2024-08-11T14:49:57.8293752Z [command]/usr/bin/git config --local gc.auto 0
+2024-08-11T14:49:57.8319511Z ##[endgroup]
+2024-08-11T14:49:57.8320306Z ##[group]Setting up auth
+2024-08-11T14:49:57.8325667Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-08-11T14:49:57.8351701Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-08-11T14:49:57.8618288Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-08-11T14:49:57.8643998Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-08-11T14:49:57.8850801Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-08-11T14:49:57.8879580Z ##[endgroup]
+2024-08-11T14:49:57.8880260Z ##[group]Fetching the repository
+2024-08-11T14:49:57.8887786Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +29fd60d6365c6df04f47ff0eb82b916dd948315e:refs/remotes/origin/master
+2024-08-11T14:49:58.2535706Z remote: Enumerating objects: 10, done.        
+2024-08-11T14:49:58.2536808Z remote: Counting objects:  10% (1/10)        
+2024-08-11T14:49:58.2537571Z remote: Counting objects:  20% (2/10)        
+2024-08-11T14:49:58.2538325Z remote: Counting objects:  30% (3/10)        
+2024-08-11T14:49:58.2539605Z remote: Counting objects:  40% (4/10)        
+2024-08-11T14:49:58.2540266Z remote: Counting objects:  50% (5/10)        
+2024-08-11T14:49:58.2540897Z remote: Counting objects:  60% (6/10)        
+2024-08-11T14:49:58.2541557Z remote: Counting objects:  70% (7/10)        
+2024-08-11T14:49:58.2542210Z remote: Counting objects:  80% (8/10)        
+2024-08-11T14:49:58.2542853Z remote: Counting objects:  90% (9/10)        
+2024-08-11T14:49:58.2543642Z remote: Counting objects: 100% (10/10)        
+2024-08-11T14:49:58.2544388Z remote: Counting objects: 100% (10/10), done.        
+2024-08-11T14:49:58.2545099Z remote: Compressing objects:  14% (1/7)        
+2024-08-11T14:49:58.2545742Z remote: Compressing objects:  28% (2/7)        
+2024-08-11T14:49:58.2546363Z remote: Compressing objects:  42% (3/7)        
+2024-08-11T14:49:58.2546974Z remote: Compressing objects:  57% (4/7)        
+2024-08-11T14:49:58.2547577Z remote: Compressing objects:  71% (5/7)        
+2024-08-11T14:49:58.2548189Z remote: Compressing objects:  85% (6/7)        
+2024-08-11T14:49:58.2548829Z remote: Compressing objects: 100% (7/7)        
+2024-08-11T14:49:58.2549473Z remote: Compressing objects: 100% (7/7), done.        
+2024-08-11T14:49:58.2551830Z remote: Total 10 (delta 1), reused 4 (delta 0), pack-reused 0        
+2024-08-11T14:49:58.2633011Z From https://github.com/Schmitty2005/MonoSpatializer_ui
+2024-08-11T14:49:58.2634333Z  * [new ref]         29fd60d6365c6df04f47ff0eb82b916dd948315e -> origin/master
+2024-08-11T14:49:58.2660205Z ##[endgroup]
+2024-08-11T14:49:58.2660985Z ##[group]Determining the checkout info
+2024-08-11T14:49:58.2663295Z ##[endgroup]
+2024-08-11T14:49:58.2664129Z ##[group]Checking out the ref
+2024-08-11T14:49:58.2667554Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2024-08-11T14:49:58.2707069Z Reset branch 'master'
+2024-08-11T14:49:58.2711004Z branch 'master' set up to track 'origin/master'.
+2024-08-11T14:49:58.2717476Z ##[endgroup]
+2024-08-11T14:49:58.2718340Z ##[group]Setting up auth for fetching submodules
+2024-08-11T14:49:58.2721961Z [command]/usr/bin/git config --global http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-08-11T14:49:58.2756674Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2024-08-11T14:49:58.2783905Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2024-08-11T14:49:58.2811249Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-7423986@github.com:
+2024-08-11T14:49:58.2835186Z ##[endgroup]
+2024-08-11T14:49:58.2836003Z ##[group]Fetching submodules
+2024-08-11T14:49:58.2842719Z [command]/usr/bin/git submodule sync --recursive
+2024-08-11T14:49:58.3066747Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+2024-08-11T14:49:58.3299240Z [command]/usr/bin/git submodule foreach --recursive git config --local gc.auto 0
+2024-08-11T14:49:58.3502430Z ##[endgroup]
+2024-08-11T14:49:58.3503255Z ##[group]Persisting credentials for submodules
+2024-08-11T14:49:58.3508892Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+2024-08-11T14:49:58.3714153Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2024-08-11T14:49:58.3922903Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+2024-08-11T14:49:58.4127008Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'org-7423986@github.com:'
+2024-08-11T14:49:58.4330730Z ##[endgroup]
+2024-08-11T14:49:58.4362303Z [command]/usr/bin/git log -1 --format='%H'
+2024-08-11T14:49:58.4381902Z '29fd60d6365c6df04f47ff0eb82b916dd948315e'

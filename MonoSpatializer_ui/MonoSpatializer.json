@@ -1,0 +1,122 @@
+{
+  "Project" : "urn:bill:test_ui",
+  "Base project" : "https://faustlv2.bitbucket.io/MonoSpatializer",
+  "Name" : "MonoSpatializer",
+  "Author" : "Schmitty2005",
+  "Window size" : [ 513 , 276 ] ,
+  "Audio Inputs" : 1 ,
+  "Audio Outputs" : 2 ,
+  "MIDI Input" : 0 ,
+  "MIDI Output" : 0 ,
+  "LV2 bypass" : 0 ,
+  "Controls" : 4 ,
+  "Colors" : [
+    {
+      "NORMAL" : [
+        ".fg" :       [ 0.850, 0.850, 0.850, 1.000] ,
+        ".bg" :       [ 0.100, 0.100, 0.100, 1.000] ,
+        ".base" :     [ 0.000, 0.000, 0.000, 1.000] ,
+        ".text" :     [ 0.900, 0.900, 0.900, 1.000] ,
+        ".shadow" :   [ 0.000, 0.000, 0.000, 0.200] ,
+        ".frame" :    [ 0.000, 0.000, 0.000, 1.000] ,
+        ".light" :    [ 0.100, 0.100, 0.100, 1.000] 
+      ] ,
+      "PRELIGHT" : [
+        ".fg" :       [ 1.000, 0.000, 1.000, 1.000] ,
+        ".bg" :       [ 0.250, 0.250, 0.250, 1.000] ,
+        ".base" :     [ 0.300, 0.300, 0.300, 1.000] ,
+        ".text" :     [ 1.000, 1.000, 1.000, 1.000] ,
+        ".shadow" :   [ 0.100, 0.100, 0.100, 0.400] ,
+        ".frame" :    [ 0.300, 0.300, 0.300, 1.000] ,
+        ".light" :    [ 0.300, 0.300, 0.300, 1.000] 
+      ] ,
+      "SELECTED" : [
+        ".fg" :       [ 0.900, 0.900, 0.900, 1.000] ,
+        ".bg" :       [ 0.200, 0.200, 0.200, 1.000] ,
+        ".base" :     [ 0.500, 0.180, 0.180, 1.000] ,
+        ".text" :     [ 1.000, 1.000, 1.000, 1.000] ,
+        ".shadow" :   [ 0.800, 0.180, 0.180, 0.200] ,
+        ".frame" :    [ 0.500, 0.180, 0.180, 1.000] ,
+        ".light" :    [ 0.500, 0.180, 0.180, 1.000] 
+      ] ,
+      "ACTIVE" : [
+        ".fg" :       [ 0.000, 1.000, 1.000, 1.000] ,
+        ".bg" :       [ 0.000, 0.000, 0.000, 1.000] ,
+        ".base" :     [ 0.180, 0.380, 0.380, 1.000] ,
+        ".text" :     [ 0.750, 0.750, 0.750, 1.000] ,
+        ".shadow" :   [ 0.180, 0.380, 0.380, 0.500] ,
+        ".frame" :    [ 0.180, 0.380, 0.380, 1.000] ,
+        ".light" :    [ 0.180, 0.380, 0.380, 1.000] 
+      ] ,
+      "INSENSITIVE" : [
+        ".fg" :       [ 0.850, 0.850, 0.850, 0.500] ,
+        ".bg" :       [ 0.100, 0.100, 0.100, 0.500] ,
+        ".base" :     [ 0.000, 0.000, 0.000, 0.500] ,
+        ".text" :     [ 0.900, 0.900, 0.900, 0.500] ,
+        ".shadow" :   [ 0.000, 0.000, 0.000, 0.100] ,
+        ".frame" :    [ 0.000, 0.000, 0.000, 0.500] ,
+        ".light" :    [ 0.100, 0.100, 0.100, 0.500] 
+      ] ,
+    }
+  ] ,
+  "IS_KNOB" : [
+    {
+      "Type" : "add_lv2_knob",
+      "Label" : "Delay MilliSeconds",
+      "Port" : 0 ,
+      "Symbol" : "Delay_MilliSeconds_0",
+      "Size" : [ 135 , 30 , 158 , 184 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 20.000000 ,
+      "Min Value" : 1.000000 ,
+      "Max Value" : 40.000000 ,
+      "Step Size" : 0.400000 ,
+    }
+  ] ,
+  "IS_KNOB" : [
+    {
+      "Type" : "add_lv2_knob",
+      "Label" : "LowPass Filter Freq",
+      "Port" : 1 ,
+      "Symbol" : "LowPass_Filter_Freq_1",
+      "Size" : [ 15 , 165 , 135 , 80 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 8000.000000 ,
+      "Min Value" : 20.000000 ,
+      "Max Value" : 20000.000000 ,
+      "Step Size" : 200.000000 ,
+    }
+  ] ,
+  "IS_HSLIDER" : [
+    {
+      "Type" : "add_lv2_hslider",
+      "Label" : "Image Pan",
+      "Port" : 2 ,
+      "Symbol" : "Image_Pan_2",
+      "Size" : [ 330 , 195 , 157 , 53 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 20.000000 ,
+      "Min Value" : -90.000000 ,
+      "Max Value" : 90.000000 ,
+      "Step Size" : 1.800000 ,
+    }
+  ] ,
+  "IS_HSLIDER" : [
+    {
+      "Type" : "add_lv2_hslider",
+      "Label" : "Original Pan",
+      "Port" : 3 ,
+      "Symbol" : "Original_Pan_3",
+      "Size" : [ 330 , 30 , 155 , 53 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : -20.000000 ,
+      "Min Value" : -90.000000 ,
+      "Max Value" : 90.000000 ,
+      "Step Size" : 1.800000 ,
+    }
+  ] 
+}

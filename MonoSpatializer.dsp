@@ -1,5 +1,5 @@
 declare name 		"MonoSpatilizer";
-declare version 	"0.6";
+declare version 	"0.7";
 declare author 		"Schmitty2005";
 declare license 	"BSD";
 declare copyright 	"(c)Schmitty 2024";
@@ -26,7 +26,7 @@ wetpanpot(y) 	= sqrt(d)*y, sqrt(1-d)*y
 
 delaymsec = hslider("Delay MilliSeconds", 20, 1, maxMillSec, 1): si.smoo; 
 lowpassFreq = hslider("LowPass Filter Freq", 8000, 20, 20000, 100): si.smoo;
-imagevol = hslider("volume [unit:dB]", 0, -96, 0, 0.1) : ba.db2linear : si.smoo;
+imagevol = hslider("Image Volume [unit:dB]", 0, -96, 0, 0.1) : ba.db2linear : si.smoo;
 
 //Stero version may not work in Windows
 //process		= _,_ :> _  <: _,_ : _, de.sdelay(maxd, 128, (delaymsec * oneMillSec)): _, fi.lowpass6e(lowpassFreq):drypanpot, wetpanpot:_,_,_,_ :> _,_;
